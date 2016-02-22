@@ -36,8 +36,8 @@ public class StartActivity extends Activity {
     //slideLeft.excludeTarget(android.R.id.statusBarBackground, true);
     //slideLeft.excludeTarget(android.R.id.navigationBarBackground, true);
     //slideLeft.excludeTarget(getResources().getIdentifier("action_bar_container", "id", "android"), true);
-    //getWindow().setEnterTransition(slideLeft);// put slideLeft as argument for whole Activity View to move
-    //getWindow().setExitTransition(slideLeft);// put slideLeft as argument for whole Activity View to move
+    //getWindow().setEnterTransition(null);// put slideLeft as argument for whole Activity View to move
+    //getWindow().setExitTransition(null);// put slideLeft as argument for whole Activity View to move
   }
 }
 /* Introduction:
@@ -45,6 +45,7 @@ public class StartActivity extends Activity {
    blue textboxes starts the new activity, where the yellow and blue textboxes switch places.
    Note StartActivity has a click listener on the yellow text view.
    Note EndActivity has a click listener on the blue text view.
+   I'll be changing the StartActivity and EndActivity based on Cases 1 through 4.
 
    Note inside of styles.xml:
     <item name="android:windowContentTransitions">false</item>
